@@ -2,7 +2,6 @@ import { screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { renderWithRedux } from "../utils/test-utils";
 import SearchBar from "./SearchBar";
-import { vi } from "vitest";
 
 describe("SearchBar Component", () => {
   it("renders correctly with default state", () => {

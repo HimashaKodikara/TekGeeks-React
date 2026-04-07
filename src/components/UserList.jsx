@@ -3,8 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchUsersAsync, toggleSortOrder } from "../store/usersSlice";
 import UserCard from "./UserCard";
 import SearchBar from "./SearchBar";
-import { ArrowUp, ArrowDown } from "lucide-react";
-import { Loader2 } from "lucide-react";
+import { ArrowUp, ArrowDown, Loader2 } from "lucide-react";
 
 export default function UserList() {
   const dispatch = useDispatch();
