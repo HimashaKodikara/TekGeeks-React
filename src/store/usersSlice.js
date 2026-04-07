@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchUsersApi } from "../services/api";
 
+
 export const fetchUsersAsync = createAsyncThunk(
   "users/fetchUsers",
   async (_, { rejectWithValue }) => {
