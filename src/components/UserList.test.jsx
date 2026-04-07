@@ -30,7 +30,6 @@ describe("UserList Component", () => {
 
     renderWithRedux(<UserList />);
 
-    // Wait for the mock users to appear on the screen
     await waitFor(() => {
       expect(screen.getByText("Alice Test")).toBeInTheDocument();
     });
@@ -43,9 +42,7 @@ describe("UserList Component", () => {
     renderWithRedux(<UserList />);
 
     await waitFor(() => {
-      expect(
-        screen.getByText(/Oops! Something went wrong/i),
-      ).toBeInTheDocument();
+      expect(screen.getByText(/Something went wrong/i)).toBeInTheDocument();
     });
     expect(screen.getByText("API Failed")).toBeInTheDocument();
   });

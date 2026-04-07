@@ -48,7 +48,6 @@ export default function UserList() {
         </button>
       </div>
 
-      {/* Loading state */}
       {loading && (
         <div className="flex flex-col items-center justify-center py-20">
           <div className="h-12 w-12 animate-spin rounded-full border-4 border-indigo-200 border-t-indigo-600"></div>
@@ -58,7 +57,6 @@ export default function UserList() {
         </div>
       )}
 
-      {/* Error state */}
       {error && !loading && (
         <div className="rounded-xl bg-red-50 p-6 text-center ring-1 ring-red-100 shadow-sm max-w-2xl mx-auto">
           <svg
@@ -76,7 +74,7 @@ export default function UserList() {
             />
           </svg>
           <h3 className="mt-2 text-lg font-bold text-red-800">
-            Oops! Something went wrong
+            Something went wrong
           </h3>
           <p className="mt-1 text-sm text-red-600">{error}</p>
           <button
